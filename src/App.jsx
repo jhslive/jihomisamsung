@@ -25,7 +25,7 @@ function App() {
   const [date, setdate] = useState(today);
 
   const [result, setResult] = useState(
-    ((bidPrice / askPrice - 1) * 75 * 100).toFixed(2)
+    ((((((maxPrice/askPrice)-(maxPrice/askPrice)*0.0005)*bidPrice) -(maxPrice/askPrice)*bidPrice*0.0005) / maxPrice - 1) *100).toFixed(2)
   );
   const [tangu, setTangu] = useState(false);
 
