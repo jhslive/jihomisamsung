@@ -77,7 +77,7 @@ function App() {
       <br />
       <br />
       <span>
-        총자산 &nbsp;
+        총 &nbsp;
         <input
           value={maxPrice}
           onChange={(e) => setmaxPrice(e.target.value)}
@@ -85,17 +85,17 @@ function App() {
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span>
-        매도금액 &nbsp;
+        매수금액 &nbsp;
         <input
-          value={bidPrice}
+          value={askPrice}
           onChange={(e) => setbidPrice(e.target.value)}
         />
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span>
-        매수금액 &nbsp;
+        매도금액 &nbsp;
         <input
-          value={askPrice}
+          value={bidPrice}
           onChange={(e) => setaskPrice(e.target.value)}
         />
       </span>
