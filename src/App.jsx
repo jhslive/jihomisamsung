@@ -31,7 +31,7 @@ function App() {
 
   useEffect(() => {
     const calculated = (
-      ((((bidPrice*maxPrice)-(((askPrice*maxPrice)*0.00015)+((bidPrice*maxPrice)*0.00015)+((bidPrice * maxPrice)*0.003)))-(askPrice*maxPrice))/(askPrice*maxPrice))*100
+      Number(((((bidPrice*maxPrice)-(((askPrice*maxPrice)*0.00015)+((bidPrice*maxPrice)*0.00015)+((bidPrice * maxPrice)*0.003)))-(askPrice*maxPrice))/(askPrice*maxPrice))*100)
     ).toFixed(2);
     if (!isLong && calculated < 0) {
       setResult(-calculated);
